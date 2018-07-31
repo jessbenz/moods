@@ -34,6 +34,7 @@ export default class App extends Component {
         <List
           list={todos}
           onPressItem={this.updateMoods}
+          key={todos.indexOf()}
         />
         <Text>{totalMoods[0]}</Text>
         <Text>{totalMoods[1]}</Text>
